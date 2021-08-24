@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="249.0" prefWidth="579.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.viewEventController">
+   <children>
+      <Label fx:id="eventName" layoutX="112.0" layoutY="63.0" prefHeight="17.0" prefWidth="94.0" style="-fx-background-color: #c0c0c0;" />
+      <Label fx:id="dueDate" layoutX="112.0" layoutY="100.0" prefHeight="17.0" prefWidth="94.0" style="-fx-background-color: #c0c0c0;" />
+      <Label fx:id="assignedDate" layoutX="439.0" layoutY="63.0" prefHeight="17.0" prefWidth="94.0" style="-fx-background-color: #c0c0c0;" />
+      <Label fx:id="eventType" layoutX="439.0" layoutY="100.0" prefHeight="17.0" prefWidth="94.0" style="-fx-background-color: #c0c0c0;" />
+      <JFXButton fx:id="closeButton" layoutX="369.0" layoutY="184.0" onAction="#close" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #c0c0c0;" text="CLOSE" />
+      <JFXButton fx:id="starButton" layoutX="99.0" layoutY="160.0" onAction="#addToFav" prefHeight="75.0" prefWidth="94.0" text="★" textFill="#c9c9c6">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="210.0" layoutY="14.0" text="Event Details" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="63.0" text="Event Name" textFill="WHITE" />
+      <Label layoutX="319.0" layoutY="63.0" text="Assigned Date" textFill="WHITE" />
+      <Label layoutX="25.0" layoutY="100.0" text="Due Date" textFill="WHITE" />
+      <Label layoutX="328.0" layoutY="100.0" text="Event Type" textFill="WHITE" />
+   </children>
+</Pane>

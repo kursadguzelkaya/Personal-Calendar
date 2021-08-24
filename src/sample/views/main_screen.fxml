@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MainScreenController">
+   <children>
+      <Pane prefHeight="45.0" prefWidth="900.0" style="-fx-background-color: #ff0000;">
+         <children>
+            <JFXButton fx:id="openCalendarsButton" layoutX="588.0" onAction="#openCalendarsPage" prefHeight="44.0" prefWidth="89.0" text="Calendars">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="openEventsButton" layoutX="677.0" onAction="#openEventsPage" prefHeight="44.0" prefWidth="71.0" text="Events">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="openSettingsButton" layoutX="748.0" layoutY="1.0" onAction="#openSettingsPage" prefHeight="44.0" prefWidth="73.0" text="Settings">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="logoutButton" layoutX="833.0" onAction="#logout" prefHeight="44.0" prefWidth="67.0" text="Logout">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXButton>
+            <Label layoutX="55.0" layoutY="10.0" prefHeight="27.0" prefWidth="199.0" text="Personal Calendar">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="44.0" prefHeight="557.0" prefWidth="154.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label layoutX="36.0" layoutY="26.0" prefHeight="27.0" prefWidth="79.0" text="Calendars" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="302.0" text="Friends" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <VBox fx:id="calendarsVBox" alignment="TOP_CENTER" layoutX="11.0" layoutY="59.0" prefHeight="228.0" prefWidth="131.0" spacing="20.0">
+               <children>
+                  <JFXRadioButton prefHeight="27.0" prefWidth="124.0" style="-fx-background-color: #ff0000;" text="Calendar 1">
+                     <selectedColor>
+                        <Color green="1.0" blue="0.07194250077009201" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </unSelectedColor>
+                  </JFXRadioButton>
+                  <JFXRadioButton prefHeight="27.0" prefWidth="124.0" style="-fx-background-color: #ff0000;" text="Calendar 2">
+                     <selectedColor>
+                        <Color green="1.0" blue="0.07194250077009201" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </unSelectedColor>
+                  </JFXRadioButton>
+                  <JFXRadioButton prefHeight="27.0" prefWidth="124.0" style="-fx-background-color: #ff0000;" text="Calendar 2">
+                     <selectedColor>
+                        <Color green="1.0" blue="0.07194250077009201" />
+                     </selectedColor>
+                     <unSelectedColor>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </unSelectedColor>
+                  </JFXRadioButton>
+               </children>
+            </VBox>
+            <VBox fx:id="friendsVBox" alignment="TOP_CENTER" layoutX="11.0" layoutY="335.0" prefHeight="217.0" prefWidth="131.0" spacing="10.0">
+               <children>
+                  <JFXButton prefHeight="2.0" prefWidth="100.0" style="-fx-background-color: #ff0000;" text="Friend 1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets right="2.0" top="2.0" />
+                     </padding>
+                  </JFXButton>
+                  <JFXButton prefWidth="100.0" style="-fx-background-color: #ff0000;" text="Friend 1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </padding>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <HBox layoutX="154.0" layoutY="69.0" prefHeight="38.0" prefWidth="778.0">
+         <children>
+            <JFXButton fx:id="displayWeeklyButton" onAction="#displayWeekly" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #ff0000;" text="Weekly" />
+            <JFXButton fx:id="displayMonthlyButton" onAction="#displayMonthly" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #c0c0c0;" text="Monthly" />
+         </children>
+      </HBox>
+      <HBox layoutX="154.0" layoutY="95.0" prefHeight="47.0" prefWidth="746.0" style="-fx-background-color: #c0c0c0;" />
+      <Pane fx:id="calendarPane" layoutX="154.0" layoutY="95.0" prefHeight="501.0" prefWidth="746.0" />
+   </children>
+</Pane>

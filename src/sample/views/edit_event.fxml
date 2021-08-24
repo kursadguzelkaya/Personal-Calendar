@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.EditEventController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+         <children>
+            <JFXButton fx:id="starButton1" layoutX="184.0" layoutY="158.0" onAction="#addToFav" prefHeight="83.0" prefWidth="88.0" text="★" textFill="#c9c9c6">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </JFXButton>
+            <DatePicker fx:id="dueDatePicker" layoutX="112.0" layoutY="113.0" prefHeight="25.0" prefWidth="145.0" />
+            <DatePicker fx:id="assignDatePicker" layoutX="419.0" layoutY="67.0" prefHeight="25.0" prefWidth="145.0" />
+            <JFXButton fx:id="saveButton" layoutX="335.0" layoutY="182.0" onAction="#saveEvent" prefHeight="36.0" prefWidth="88.0" style="-fx-background-color: #ff0000;" text="SAVE" />
+            <TextField fx:id="eventNameField" layoutX="112.0" layoutY="67.0" prefHeight="25.0" prefWidth="145.0" />
+            <TextField fx:id="EventTypeField" layoutX="419.0" layoutY="113.0" prefHeight="25.0" prefWidth="145.0" />
+            <Label layoutX="34.0" layoutY="71.0" text="Event Name:" textFill="WHITE" />
+            <Label layoutX="36.0" layoutY="116.0" prefHeight="18.0" prefWidth="63.0" text="Due Date:" textFill="WHITE" />
+            <Label layoutX="335.0" layoutY="71.0" text="Assigned Date:" textFill="WHITE" />
+            <Label layoutX="343.0" layoutY="117.0" text="Event Type:" textFill="WHITE" />
+            <Label layoutX="242.0" layoutY="14.0" prefHeight="36.0" prefWidth="132.0" text="EDIT EVENT" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+</GridPane>

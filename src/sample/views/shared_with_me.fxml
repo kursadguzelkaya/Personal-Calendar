@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.SharedWithMeController">
+    <children>
+        <HBox prefHeight="47.0" prefWidth="900.0" style="-fx-background-color: #ff0000;">
+            <children>
+                <Label prefHeight="35.0" prefWidth="608.0" text="      Personal Calendar">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="mainButton" layoutX="443.0" layoutY="10.0" onAction="#goMain" prefHeight="42.0" prefWidth="88.0" text="Main">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="myCalendarsButton" onAction="#goMyCalendars" prefHeight="43.0" prefWidth="141.0" text="My Calendars">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="logoutButton" layoutX="495.0" layoutY="10.0" onAction="#logout" prefHeight="42.0" prefWidth="95.0" text="Logout">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </HBox>
+        <Pane layoutX="106.0" layoutY="42.0" prefHeight="58.0" prefWidth="795.0" style="-fx-background-color: #696969;">
+            <children>
+                <Label layoutX="344.0" prefHeight="58.0" prefWidth="200.0" text="FRIEND 2's CALENDAR" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <HBox layoutX="107.0" layoutY="100.0" prefHeight="47.0" prefWidth="795.0" style="-fx-background-color: #c0c0c0;" />
+      <Pane fx:id="calendarPane" layoutX="106.0" layoutY="100.0" prefHeight="501.0" prefWidth="795.0" />
+      <Pane layoutX="-6.0" layoutY="42.0" prefHeight="559.0" prefWidth="134.0" style="-fx-background-color: #000000;">
+         <children>
+            <TextField fx:id="searchCalendar" layoutX="14.0" layoutY="49.0" prefHeight="25.0" prefWidth="85.0" />
+            <JFXButton layoutX="86.0" layoutY="49.0" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: c0c0c0;" text="🔍" textFill="#25a8db">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="18.0" layoutY="14.0" text="CALENDARS" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="307.0" text="EVENTS" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="searchEvent" layoutX="14.0" layoutY="338.0" prefHeight="25.0" prefWidth="85.0" />
+            <JFXButton layoutX="95.0" layoutY="338.0" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: c0c0c0;" text="🔍" textFill="#25a8db">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </JFXButton>
+            <VBox fx:id="eventsVBox" alignment="TOP_CENTER" layoutX="-3.0" layoutY="373.0" prefHeight="186.0" prefWidth="147.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #ff0000;" text="  Assignment 1" textAlignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #ff0000;" text="  Assignment 2" textAlignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #ff0000;" text="     Meeting 1" textAlignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #ff0000;" text="     Metting 2" textAlignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <JFXButton fx:id="newCalendarButton" layoutX="25.0" layoutY="89.0" prefHeight="22.0" prefWidth="76.0" style="-fx-background-color: #c0c0c0;" text="New Calendar" textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </JFXButton>
+            <VBox fx:id="calendarsVBox" layoutX="4.0" layoutY="120.0" prefHeight="160.0" prefWidth="138.0">
+               <children>
+                  <HBox prefHeight="42.0" prefWidth="129.0">
+                     <children>
+                        <JFXButton prefHeight="27.0" prefWidth="32.0" text="★" textFill="#ffd400">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="calendar1" prefHeight="19.0" prefWidth="60.0" style="-fx-background-color: #c0c0c0;" text="Calendar 1">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton prefHeight="27.0" prefWidth="28.0" text="🔗" textFill="#605555" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="42.0" prefWidth="100.0">
+                     <children>
+                        <JFXButton fx:id="firstFavButton" prefHeight="27.0" prefWidth="32.0" text="★" textFill="#c0bfbc">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton prefHeight="16.0" prefWidth="60.0" style="-fx-background-color: #c0c0c0;" text="Calendar 2" textAlignment="CENTER">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton prefHeight="27.0" prefWidth="28.0" text="🔗" textFill="#605555" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="54.0" prefWidth="126.0">
+                     <children>
+                        <JFXButton fx:id="secondFavButton"  prefHeight="27.0" prefWidth="32.0" text="★" textFill="#c0bfbc">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton prefHeight="16.0" prefWidth="60.0" style="-fx-background-color: #c0c0c0;" text="Calendar 3">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton prefHeight="27.0" prefWidth="28.0" text="🔗" textFill="#605555" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+    </children>
+</Pane>

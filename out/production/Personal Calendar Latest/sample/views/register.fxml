@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.RegisterController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Pane layoutX="334.0" layoutY="135.0" prefHeight="347.0" prefWidth="289.0" style="-fx-background-color: #ff0000;">
+               <children>
+                  <JFXButton fx:id="signUpButton" layoutX="72.0" layoutY="307.0" onAction="#signUp" prefHeight="5.0" prefWidth="149.0" style="-fx-background-color: #000000;" text="Sign Up!" textFill="RED" textOverrun="CLIP">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <TextField fx:id="usernameField" layoutX="69.0" layoutY="38.0" />
+                  <TextField fx:id="emailField" layoutX="69.0" layoutY="236.0" />
+                  <PasswordField fx:id="passwordField" layoutX="69.0" layoutY="103.0" />
+                  <PasswordField fx:id="retypePasswordField" layoutX="69.0" layoutY="179.0" />
+                  <Label layoutX="115.0" layoutY="9.0" text="Username">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="111.0" layoutY="83.0" text="Password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="152.0" text="Retype password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="98.0" layoutY="216.0" text="Email address">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label id="errorLabel" fx:id="errorLabel" layoutX="9.0" layoutY="274.0" prefHeight="25.0" prefWidth="273.0" style="-fx-background-color: #000;" textAlignment="CENTER" textFill="WHITE" visible="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="backToLoginButton" layoutX="395.0" layoutY="503.0" onAction="#backToLoginScreen" prefHeight="34.0" prefWidth="167.0" style="-fx-background-color: #ff0000;" text="Back to the Login Screen" textOverrun="CLIP" />
+            <Label layoutX="414.0" layoutY="53.0" text="Register" textFill="RED">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

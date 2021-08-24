@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #000000;">
+         <children>
+            <HBox prefHeight="90.0" prefWidth="900.0" style="-fx-background-color: #ff0000;">
+               <children>
+                  <Label prefHeight="51.0" prefWidth="706.0" text="PERSONAL CALENDAR">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+                  <JFXButton prefHeight="50.0" prefWidth="98.0" text="Main">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton prefHeight="50.0" prefWidth="98.0" text="Log Out">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <Label layoutX="377.0" layoutY="99.0" prefHeight="51.0" prefWidth="146.0" text="FRIENDS" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label layoutX="216.0" layoutY="175.0" prefHeight="58.0" prefWidth="250.0" style="-fx-background-color: #ff0000;" text="Friend 1">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="216.0" layoutY="242.0" prefHeight="58.0" prefWidth="250.0" style="-fx-background-color: #ff0000;" text="Friend 2">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="216.0" layoutY="312.0" prefHeight="58.0" prefWidth="250.0" style="-fx-background-color: #ff0000;" text="Friend 3">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Label layoutX="216.0" layoutY="378.0" prefHeight="58.0" prefWidth="250.0" style="-fx-background-color: #ff0000;" text="Friend 4">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <TextField layoutX="216.0" layoutY="479.0" prefHeight="42.0" prefWidth="250.0" text="USERNAME">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+            <JFXButton layoutX="466.0" layoutY="479.0" prefHeight="42.0" prefWidth="114.0" style="-fx-background-color: #ff0000;" text="Add Friend">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="475.0" layoutY="176.0" prefHeight="50.0" prefWidth="68.0" style="-fx-background-color: #ffffff;" text="💭">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="475.0" layoutY="243.0" prefHeight="50.0" prefWidth="68.0" style="-fx-background-color: #ffffff;" text="💭">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="475.0" layoutY="313.0" prefHeight="50.0" prefWidth="68.0" style="-fx-background-color: #ffffff;" text="💭">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="475.0" layoutY="378.0" prefHeight="50.0" prefWidth="68.0" style="-fx-background-color: #ffffff;" text="💭">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="681.0" layoutY="315.0" prefHeight="285.0" prefWidth="218.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="180.0" style="-fx-background-color: #ff0000; -fx-border-color: #000000;" text="FRIEND 1">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="180.0" prefHeight="30.0" prefWidth="39.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="❌">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="180.0" layoutY="248.0" prefHeight="15.0" prefWidth="39.0" style="-fx-background-color: #000000; -fx-border-color: #000000;" text="►" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <TextField layoutY="248.0" prefHeight="37.0" prefWidth="180.0" style="-fx-border-color: #000000;" text="Click to Write Something" />
+                  <Label layoutX="14.0" layoutY="42.0" prefHeight="68.0" prefWidth="159.0" style="-fx-border-color: #000000;" text="Bla bla..." textAlignment="CENTER" />
+                  <Label layoutX="45.0" layoutY="154.0" prefHeight="68.0" prefWidth="159.0" style="-fx-border-color: #000000;" text="Bla bla..." textAlignment="CENTER" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</GridPane>
