@@ -1,5 +1,5 @@
 # Personal Calendar
-***Personal calendar is a desktap app that help you schedule your events***
+***Personal calendar is a desktop app that help you schedule your events***
 
 ***This is a group project for CS102***
 
